@@ -87,7 +87,12 @@ function calcWave() {
     }
   }
 }
-
+function touchEnded() {
+  for (let i = 0; i < 20; i++) {
+    let p = new Particle(touchX, touchY);
+    particles.push(p);
+  }
+}
 function mouseClicked() {
   for (let i = 0; i < 20; i++) {
     let p = new Particle(mouseX, mouseY);
